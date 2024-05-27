@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Advinhe o Número</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <center>
+            <h1 class="titulo">Jogo de advinhar números</h1>
+            <br>
+            <span class="Digite">Digite um número entre 1 e 100:</span>
+            <input type="text" id="x" autofocus>
+            <br><br>
+            <input type="button" value ="Jogar" onclick="testejogo()">
+            <input type="button" value ="Novo Número" onclick="geranumero()">
+        </center>
+        <br>
+        <br>
+        <br>
+        <div class="botao">
+        <p class="dificuldade">Escolha uma dificuldade:</p>
+        <input type="button" value= "Facil" onclick="facil()" class="facil" >
+        <input type="button" value="Normal" onclick="normal()" class="normal">
+        <input type="button" value="Difícil" onclick="dificil()" class="dificil">
+        </div>
+        
+        <div class="numeroTentativas">
+            <p id="jogo" class="jogo"></p>
+            <p id="maximo" class="maximo"></p>
+        </div>
+        
+        <script src="teste.js"></script>
+    </body>
+</html>
